@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
             scale: 1,
             filterQuality: FilterQuality.high,
             // repeat: ImageRepeat.noRepeat,
-            cacheHeight: 600,
+            cacheHeight: 1000,
             // cacheWidth: 00,
             fit: BoxFit.fitHeight,
             // height: 400,
