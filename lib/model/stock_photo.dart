@@ -4,12 +4,11 @@ import 'package:http/http.dart' as http;
 
 class StockPhoto {
   String photo;
-  String desc;
 
-  StockPhoto({this.photo, this.desc});
+  StockPhoto({this.photo});
 
   factory StockPhoto.createPhoto(Map<String, dynamic> object) {
-    return StockPhoto(photo: object['full'], desc: object['urls']['full']);
+    return StockPhoto(photo: object['urls']['full']);
   }
 
   static Future<List<StockPhoto>> getPhoto() async {

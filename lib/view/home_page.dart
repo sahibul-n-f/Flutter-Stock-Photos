@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
     return StockPhoto.getPhoto().then((value) {
       list = new List();
       for (int i = 0; i < value.length; i++) {
-        list.add(value[i].desc);
+        list.add(value[i].photo);
         // print(value[i].desc);
       }
       return list;
